@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c2119c4557.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="qr_code.css">
+    <link rel="shortcut icon" href="qr-code.png" type="image/x-icon"> 
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-box">
+            <h1 class="title"><i class="fa-sharp fa-solid fa-qrcode"></i> QR Code Generator</h1>
+            <div class="inner-box">
+                <div class="input-part">
+                    <input class="input" name="" id="" placeholder="Enter URL or texts...">
+                    <aside>
+                        <input class="check" type="checkbox" id="advanced" name="advanced" value="">
+                        <label for="advanced">Advanced Options</label>
+                        <div class="advanced-options">
+                            <div class="more-opt">
+                                <div>
+                                    <label for="">Size</label>
+                                    <input class="input size" name="" type="number" id="" placeholder="Size in pixels..">
+                                </div>
+                                <div>
+                                    <label for="">Format</label>
+                                    <select class="input format" name="" id="">
+                                        <option value="png">PNG</option>
+                                        <option value="jpeg">JPEG</option>
+                                        <option value="svg">SVG</option>
+                                        <option value="gif">GIF</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <button class="button generate">Generate QR Code <i class="fa-solid fa-rotate"></i></button>
+                </div>
+                <div class="output">
+                    <img src="" alt="">
+                    <button class="button download">Download <i class="fa-solid fa-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- custom js -->
+    <script src="qr_code.js"></script>
+</body>
+</html>
