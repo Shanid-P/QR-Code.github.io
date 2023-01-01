@@ -51,7 +51,6 @@ generateBtn.addEventListener("click", ()=>{
         SizeValue = 150;
         formatValue = "png";
     }
-    console.log(formatValue)
     createOutput(inputValue, SizeValue, formatValue);
 })
 function createOutput(inputValue){
