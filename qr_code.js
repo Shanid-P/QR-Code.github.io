@@ -55,7 +55,6 @@ generateBtn.addEventListener("click", ()=>{
     createOutput(inputValue, SizeValue, formatValue);
 })
 function createOutput(inputValue){
-    console.log(SizeValue, formatValue)
     let QRImg = outputPart.querySelector("img");
     generateBtn.innerHTML = "Generating..."
     QRImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=${SizeValue}x${SizeValue}&data=${inputValue}&format=${formatValue}`;
@@ -67,7 +66,6 @@ function createOutput(inputValue){
         input.value = "";
     })
 
-    console.log(outputPart)
 }
 downloadBtn.addEventListener("click", function() {
     let url = outputPart.querySelector("img").src;
